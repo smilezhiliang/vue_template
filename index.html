@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>tianyan</title>
+      <link rel="stylesheet" href="//at.alicdn.com/t/font_mgurl0tgd1ymygb9.css">
+    <style>
+      body,
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 0.14rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app" style="font-size: initial;"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+        (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',//屏幕旋转和窗口调整事件
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+  </script>
+</html>

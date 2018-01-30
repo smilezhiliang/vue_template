@@ -1,0 +1,17 @@
+.manage_index{
+    .weui-cells__title{
+    color:$font-color;
+    font-size:0.15rem;
+    margin-bottom:0;
+    padding:0.1rem;
+  }
+    .weui-grid__label{
+    color:$font-color;
+    font-size:0.14rem;
+  }
+   .disabled-tools{
+    .weui-grid__label{
+      color:#c5c5c5;
+    }
+  }
+}
